@@ -12,14 +12,14 @@
 #include "sys/time.h"
 #include "time.h"
 
-long fun_b(){
+long _ly_fun_b(){
     struct timeval star;
     gettimeofday(&star, NULL);
     long b = star.tv_sec * 1000000 + star.tv_usec;
     return b;
 }
 
-void fun_e(char *name, long b){
+void _ly_fun_e(char *name, long b){
     struct timeval end;
     gettimeofday(&end, NULL);
     long e = end.tv_sec * 1000000 + end.tv_usec;
